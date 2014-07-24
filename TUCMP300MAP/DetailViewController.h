@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+
 
 @interface DetailViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+- (IBAction)dropPin:(id)sender;
+- (IBAction)clearPin:(id)sender;
+
 
 @property (strong, nonatomic) id detailItem;
 
